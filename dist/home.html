@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Buscador de Peliculas</title>
+<link href="css/home.css" rel="stylesheet"></head>
+<body class="home">
+    <section class="modal hide" id="modal">Cargando...</section>
+    <header class="header">
+        <h3>Favmovies</h3>
+        <div class="search">
+            <div class="field">
+                <input type="text" name="" id="search" placeholder="Buscar">
+            </div>
+            <button type="button" class="submit" id="submit">
+                <i class="material-icons">search</i>
+            </button>
+        </div>
+        <span class="logout" id="logout">Cerrar sesión</span>    
+    </header>
+    <section class="movies" id="movies">
+        <div class="head" id="navigator">
+            <div class="btn goback hide"><i class="material-icons">keyboard_arrow_left</i></div>
+            <span class="">Mis películas favoritas</span>
+            <div class="center hide">
+                <div></div>
+                <div class="gofavorites">Volver a Favoritos</div>  
+            </div>
+            <div class="btn goforward hide"><i class="material-icons">keyboard_arrow_right</i></div>
+        </div>
+        <div class="cardlist"></div>
+    </section>
+    
+<script src="js/home.bundle.js"></script></body>
+</html>

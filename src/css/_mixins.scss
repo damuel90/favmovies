@@ -1,0 +1,47 @@
+@mixin head($justify: center) {
+    width: 100%;
+    z-index: 100;
+    position: fixed;
+    background-color: $primary;
+    align-self: start;
+    color: white;
+    text-align: center;
+    height: 60px;
+    box-sizing: border-box;
+    padding: 7px 20px;
+    box-shadow: $boxShadow;
+    display: flex;
+    align-items: center;
+    justify-content: $justify;
+}
+
+@mixin main($width: 100%) {
+    position: relative;
+    top: 60px;
+    height: calc(100% - 60px);
+    width: $width;
+    box-sizing: border-box;
+}
+
+@mixin button($colorBase, $colorText, $colorHover, $width: 100%) {
+    background-color: $colorBase;
+    border: none;
+    width: $width;
+    padding: 10px;
+    border-radius: $borderRadius;
+    color: $colorText;
+    font-weight: bold;
+    &:hover{
+        background-color: $colorHover;
+    }
+    &:focus{
+        outline: none;
+    }
+}
+
+@mixin box($color: white) {
+    background-color: $color;
+    border-radius: $borderRadius;
+    box-sizing: border-box;
+    box-shadow: $boxShadow;
+}
