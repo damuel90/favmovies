@@ -333,6 +333,13 @@ template {
       cursor: pointer; }
       .home .header .logout:hover {
         color: #3772FF; }
+    @media (max-width: 529px) {
+      .home .header {
+        padding: 7px 5px; }
+        .home .header .search {
+          margin: 0 0 0 5px; }
+        .home .header h3 {
+          display: none; } }
   .home .movies {
     position: relative;
     top: 60px;

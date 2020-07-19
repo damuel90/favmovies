@@ -153,6 +153,15 @@
                 color: $info;
             }
         }
+        @media (max-width: 529px) {
+            padding: 7px 5px;
+            .search{
+                margin: 0 0 0 5px;
+            }
+            h3{
+                display: none;  
+            }
+        }
     }
     .movies{
         @include main(870px);
